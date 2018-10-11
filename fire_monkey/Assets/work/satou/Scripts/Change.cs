@@ -37,12 +37,15 @@ public class Change : MonoBehaviour {
         switch (num)
         {
             case 0:
+                //炎で死んだとき
                 sprRen.sprite = fire;
                 break;
             case 1:
+                //煙で死んだとき
                 sprRen.sprite = smoke;
                 break;
             case 2:
+                //バックドラフトで死んだとき
                 sprRen.sprite = draft;
                 break;
             default:

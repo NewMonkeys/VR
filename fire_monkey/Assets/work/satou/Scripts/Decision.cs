@@ -36,6 +36,7 @@ public class Decision : MonoBehaviour {
         area.GetComponent<VRTK_HeadsetFade>().Fade(Color.black, 3.0f);
         yield return new WaitForSeconds(waitTime);
 
+        //ゲームオーバーの表示を炎で死んだときの画像に変える
         Change.num = 0;
         SceneManager.LoadScene("GameOver");
 
@@ -76,7 +77,6 @@ public class Decision : MonoBehaviour {
 
     public void gameOver(string damegeName)
     {
-
         if (damegeName == "fireWall")
         {
             //ワープ禁止エリアを召喚

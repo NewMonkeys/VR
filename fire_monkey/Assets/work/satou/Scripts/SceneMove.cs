@@ -37,7 +37,10 @@ public class SceneMove : MonoBehaviour
 
     void Move()
     {
-        if(SceneName == "GameOver" || SceneName == "Clear")
+        //シーン名を取得
+        SceneName = SceneManager.GetActiveScene().name;
+
+        if (SceneName == "GameOver" || SceneName == "Clear")
         {
             time += Time.deltaTime;
 
