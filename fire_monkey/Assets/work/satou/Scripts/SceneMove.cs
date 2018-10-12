@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneMove : MonoBehaviour
 { 
     [SerializeField]
-    SCENES scene;
+    public SCENES scene;
 
     [SerializeField]
     SCENES debug;
@@ -16,6 +16,9 @@ public class SceneMove : MonoBehaviour
 
     //カウント
     public float time;
+
+    //階層取得用
+    public static int floor;
 
     //ワープまでの時間
     [SerializeField]
@@ -40,13 +43,19 @@ public class SceneMove : MonoBehaviour
         //シーン名を取得
         SceneName = SceneManager.GetActiveScene().name;
 
-        if (SceneName == "GameOver" || SceneName == "Clear")
+        if(SceneName == "Clear")
+        {
+            SceneManage.SceneMove(scene);
+        }
+
+
+        if (SceneName == "GameOver")
         {
             time += Time.deltaTime;
 
             if (time > warpTime)
             {
-                SceneManage.SceneMove(scene);
+                Choose(); 
             }
         }
     }
@@ -63,6 +72,24 @@ public class SceneMove : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             SceneManage.SceneMove(debug);
+        }
+    }
+
+    void Choose()
+    {
+        switch (floor)
+        {
+            case 0:
+                SceneManager.LoadScene("school6");
+                break;
+            case 1:
+                SceneManager.LoadScene("school5");
+                break;
+            case 2:
+                SceneManager.LoadScene("school1");
+                break;
+            default:
+                break;
         }
     }
 }

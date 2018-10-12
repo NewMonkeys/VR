@@ -13,6 +13,9 @@ public class Decision : MonoBehaviour {
     [SerializeField]
     private GameObject ban;
 
+    //現在のシーンの名前
+    string SceneName;
+
     public AudioClip se;
 
     private AudioSource audioSource;
@@ -20,6 +23,7 @@ public class Decision : MonoBehaviour {
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        SceneName = SceneManager.GetActiveScene().name;
     }
 
     //ゲームクリア
@@ -36,6 +40,24 @@ public class Decision : MonoBehaviour {
         area.GetComponent<VRTK_HeadsetFade>().Fade(Color.black, 3.0f);
         yield return new WaitForSeconds(waitTime);
 
+        switch (SceneName)
+        {
+            case "school6":
+                //6階で死んだとき
+                SceneMove.floor = 0;
+                break;
+            case "school5":
+                //5階で死んだとき
+                SceneMove.floor = 1;
+                break;
+            case "school1":
+                //1階で死んだとき
+                SceneMove.floor = 2;
+                break;
+            default:
+                break;
+        }
+
         //ゲームオーバーの表示を炎で死んだときの画像に変える
         Change.num = 0;
         SceneManager.LoadScene("GameOver");
@@ -50,6 +72,7 @@ public class Decision : MonoBehaviour {
         yield return new WaitForSeconds(waitTime);
 
         Change.num = 1;
+        
         SceneManager.LoadScene("GameOver");
     }
 
