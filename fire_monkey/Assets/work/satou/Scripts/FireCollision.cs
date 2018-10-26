@@ -17,14 +17,4 @@ public class FireCollision : MonoBehaviour {
             Destroy(other.gameObject);
         }
     }
-
-    /*
-    private void OnParticleTrigger(GameObject other)
-    {
-        if (other.tag == "fireWall")
-        {
-            Debug.Log("ジュージュー");
-            Destroy(other.gameObject);
-        }
-    }*/
 }

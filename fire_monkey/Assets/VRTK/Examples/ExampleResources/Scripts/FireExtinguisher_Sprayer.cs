@@ -8,21 +8,21 @@
         public float breakDistance = 0.12f;
         public float maxSprayPower = 5f;
 
+        [SerializeField]
         private GameObject waterSpray;
+        [SerializeField]
         private ParticleSystem particles;
 
         public void Spray(float power)
         {
-            if (power <= 0)
-            {
-                particles.Stop();
-            }
+            
 
             if (power > 0)
             {
                 if (particles.isPaused || particles.isStopped)
                 {
                     particles.Play();
+                    FindObjectOfType<FireTime>().use = true;
                 }
 
 #if UNITY_5_5_OR_NEWER
@@ -32,19 +32,28 @@
                 particles.startSpeed = maxSprayPower * power;
 #endif
             }
+
+            if (power <= 0)
+            {
+                particles.Stop();
+                FindObjectOfType<FireTime>().use = false;
+            }
         }
 
         protected override void Awake()
         {
             base.Awake();
-            waterSpray = transform.Find("WaterSpray").gameObject;
-            particles = waterSpray.GetComponent<ParticleSystem>();
-            particles.Stop();
+            //waterSpray = transform.Find("WaterSpray").gameObject;
+            //particles = waterSpray.GetComponent<ParticleSystem>();
+            //particles.Stop();
         }
 
         protected override void Update()
         {
+
             base.Update();
+
+            
             if (Vector3.Distance(transform.position, baseCan.transform.position) > breakDistance)
             {
                 ForceStopInteracting();

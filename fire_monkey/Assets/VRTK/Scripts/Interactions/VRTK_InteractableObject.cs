@@ -890,6 +890,7 @@ namespace VRTK
             {
                 secondaryGrabActionScript.ProcessUpdate();
             }
+
         }
 
         /// <summary>
