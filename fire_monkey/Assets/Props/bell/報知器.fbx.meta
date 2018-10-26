@@ -1,9 +1,7 @@
 fileFormatVersion: 2
 guid: f4a8ee75c03d08b4d94b3b90a6401119
-timeCreated: 1509095669
-licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: "\u5186\u67F1.008"
     100002: //RootNode
@@ -22,12 +20,13 @@ ModelImporter:
     4300000: "\u7ACB\u65B9\u4F53.002"
     4300002: "\u5186\u67F1.008"
     4300004: "\u7ACB\u65B9\u4F53"
+    2186277476908879412: ImportLogs
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: c4b9f4101153f5c4f8449557dd292764, type: 2}
+    second: {fileID: 2100000, guid: 98b2825129b79c0448975576c81527b1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -66,6 +65,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -90,11 +90,15 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
