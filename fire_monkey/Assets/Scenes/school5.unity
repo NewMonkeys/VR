@@ -51135,7 +51135,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4539550408808678, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.99
+      value: 0.453
       objectReference: {fileID: 0}
     - target: {fileID: 4539550408808678, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
       propertyPath: m_LocalPosition.z
@@ -51175,6 +51175,22 @@ Prefab:
       propertyPath: m_Center.x
       value: 2.3366826
       objectReference: {fileID: 0}
+    - target: {fileID: 4539550408808678, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1925348141191446, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207410722643364, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372239140218054, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd1d88da9cf079b48943b5ed129b7979, type: 2}
   m_IsPrefabParent: 0
@@ -51193,8 +51209,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7352667, y: 1.4373178, z: 3.0106876}
-  m_Center: {x: 1.8676338, y: -1.2339034, z: 1.0053442}
+  m_Size: {x: 4.7352667, y: 3.0278354, z: 3.0106876}
+  m_Center: {x: 1.8676338, y: -0.43864465, z: 1.0053442}
 --- !u!4 &1864756720 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4100277675425056, guid: a24a1cc9f1b57d14a9b916b41f8b03a3,
