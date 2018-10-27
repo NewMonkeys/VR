@@ -45,8 +45,13 @@ public class SceneMove : MonoBehaviour
 
         if(SceneName == "Clear")
         {
-            SceneManage.SceneMove(scene);
-        }
+           
+			time += Time.deltaTime;
+
+			if (time > warpTime) {
+				SceneManage.SceneMove(scene);
+			}
+		}
 
 
         if (SceneName == "GameOver")
