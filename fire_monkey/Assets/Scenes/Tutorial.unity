@@ -5761,6 +5761,31 @@ Prefab:
       propertyPath: map
       value: 
       objectReference: {fileID: 1194996563}
+    - target: {fileID: 136423193038429656, guid: 3ea3bcdec229fa0408ffc75a828d0a69,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.006052155
+      objectReference: {fileID: 0}
+    - target: {fileID: 136423193038429656, guid: 3ea3bcdec229fa0408ffc75a828d0a69,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -1.7300337e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 136423193038429656, guid: 3ea3bcdec229fa0408ffc75a828d0a69,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.010673204
+      objectReference: {fileID: 0}
+    - target: {fileID: 136423193038429656, guid: 3ea3bcdec229fa0408ffc75a828d0a69,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.0030521548
+      objectReference: {fileID: 0}
+    - target: {fileID: 136423193038429656, guid: 3ea3bcdec229fa0408ffc75a828d0a69,
+        type: 2}
+      propertyPath: m_Height
+      value: 0.025346404
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ea3bcdec229fa0408ffc75a828d0a69, type: 2}
   m_IsPrefabParent: 0
