@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -10719,6 +10719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845792952}
   - component: {fileID: 845792953}
+  - component: {fileID: 845792954}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -10756,6 +10757,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &845792954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845792951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a6802bb38f1b4da37a57e41222141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trg: 0
 --- !u!1001 &848445113
 Prefab:
   m_ObjectHideFlags: 0
@@ -11607,6 +11620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958025525}
   - component: {fileID: 958025526}
+  - component: {fileID: 958025527}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -11643,6 +11657,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &958025527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958025524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a6802bb38f1b4da37a57e41222141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trg: 0
 --- !u!1001 &959507814
 Prefab:
   m_ObjectHideFlags: 0
@@ -20555,6 +20581,7 @@ GameObject:
   - component: {fileID: 1753671273}
   - component: {fileID: 1753671272}
   - component: {fileID: 1753671275}
+  - component: {fileID: 1753671276}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -20643,12 +20670,26 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1753671270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: cb37af95248d275488b8625db0f478dc, type: 2}
+--- !u!114 &1753671276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753671270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364a13ef71f9b40e58990911b66a39cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlindMode: 0
+  BlindIntensity: 1
+  ColorBlindShader: {fileID: 0}
 --- !u!1 &1769142828
 GameObject:
   m_ObjectHideFlags: 0
