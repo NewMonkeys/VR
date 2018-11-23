@@ -5,11 +5,12 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 1
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: e7330f6f60852414e9f25b9345615af2
+  m_OcclusionCullingData: {fileID: 36300000, guid: 699b860b7d6d8ae4b87c37ee114b4709,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -10110,6 +10111,45 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 759187834}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &772170566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 772170568}
+  - component: {fileID: 772170567}
+  m_Layer: 0
+  m_Name: Occlusion Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!192 &772170567
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772170566}
+  serializedVersion: 2
+  m_Size: {x: 45, y: 7.5, z: 60}
+  m_Center: {x: -17.5, y: 3, z: 7.5}
+  m_IsViewVolume: 1
+--- !u!4 &772170568
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772170566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 105
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &777315851
 Prefab:
   m_ObjectHideFlags: 0
@@ -10679,6 +10719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845792952}
   - component: {fileID: 845792953}
+  - component: {fileID: 845792954}
   m_Layer: 0
   m_Name: Controller (right)
   m_TagString: Untagged
@@ -10716,6 +10757,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &845792954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845792951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a6802bb38f1b4da37a57e41222141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trg: 0
 --- !u!1001 &848445113
 Prefab:
   m_ObjectHideFlags: 0
@@ -11567,6 +11620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 958025525}
   - component: {fileID: 958025526}
+  - component: {fileID: 958025527}
   m_Layer: 0
   m_Name: Controller (left)
   m_TagString: Untagged
@@ -11603,6 +11657,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: -1
   origin: {fileID: 0}
+--- !u!114 &958025527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958025524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4a6802bb38f1b4da37a57e41222141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trg: 0
 --- !u!1001 &959507814
 Prefab:
   m_ObjectHideFlags: 0
@@ -20515,6 +20581,7 @@ GameObject:
   - component: {fileID: 1753671273}
   - component: {fileID: 1753671272}
   - component: {fileID: 1753671275}
+  - component: {fileID: 1753671276}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -20603,12 +20670,26 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1753671270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: cb37af95248d275488b8625db0f478dc, type: 2}
+--- !u!114 &1753671276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1753671270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 364a13ef71f9b40e58990911b66a39cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlindMode: 0
+  BlindIntensity: 1
+  ColorBlindShader: {fileID: 0}
 --- !u!1 &1769142828
 GameObject:
   m_ObjectHideFlags: 0
